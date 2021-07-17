@@ -13,7 +13,12 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.8
-   
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+        
     - name: Running Scanner
       run: |
          python3 maps_api_scanner_python3.py --api-key AIzaSyCvw89hxXBeobcUVcMZ3ytDV7-8tsXcBk4
