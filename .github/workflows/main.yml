@@ -14,7 +14,7 @@ jobs:
       with:
         python-version: 3.8
    
-      - name: Running Scanner
-        run: |
-          python3 maps_api_scanner_python3.py --api-key AIzaSyCvw89hxXBeobcUVcMZ3ytDV7-8tsXcBk4
-        shell: bash
+    - name: Running Scanner
+      run: |
+         python3 maps_api_scanner_python3.py --api-key AIzaSyCvw89hxXBeobcUVcMZ3ytDV7-8tsXcBk4
+      shell: bash
