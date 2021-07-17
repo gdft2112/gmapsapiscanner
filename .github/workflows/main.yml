@@ -1,0 +1,20 @@
+name: gmapsapiscanner test
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+   
+      - name: Running Scanner
+        run: |
+          python3 maps_api_scanner_python3.py --api-key AIzaSyCvw89hxXBeobcUVcMZ3ytDV7-8tsXcBk4
+        shell: bash
